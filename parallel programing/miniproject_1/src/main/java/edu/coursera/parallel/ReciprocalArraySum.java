@@ -169,6 +169,7 @@ public final class ReciprocalArraySum {
      */
     protected static double parManyTaskArraySum(final double[] input,
                                                 final int numTasks) {
+        assert numTasks < input.length;
         double sum = 0;
 
         ReciprocalArraySumTask[] chunksOfArray = new ReciprocalArraySumTask[numTasks];
