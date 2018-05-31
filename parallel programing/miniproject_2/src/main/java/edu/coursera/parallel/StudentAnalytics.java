@@ -1,9 +1,8 @@
 package edu.coursera.parallel;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -46,7 +45,11 @@ public final class StudentAnalytics {
      */
     public double averageAgeOfEnrolledStudentsParallelStream(
             final Student[] studentArray) {
-        throw new UnsupportedOperationException();
+        return Stream.of(studentArray)
+                .parallel()
+                .filter(s -> s.checkIsCurrent())
+                .mapToDouble(a -> a.getAge())
+                .average().getAsDouble();
     }
 
     /**
@@ -100,7 +103,17 @@ public final class StudentAnalytics {
      */
     public String mostCommonFirstNameOfInactiveStudentsParallelStream(
             final Student[] studentArray) {
-        throw new UnsupportedOperationException();
+        Map<String, Integer> nameCounts = new HashMap<String, Integer>();
+        Stream.of(studentArray)
+                .filter(s -> !s.checkIsCurrent())
+                .forEach((s) -> {
+                    if (nameCounts.containsKey(s.getFirstName()))
+                        nameCounts.put(s.getFirstName(), nameCounts.get(s.getFirstName()) + 1);
+                    else
+                        nameCounts.put(s.getFirstName(), 1);
+                });
+        return nameCounts.entrySet().stream()
+                .max(Map.Entry.comparingByValue()).get().getKey();
     }
 
     /**
