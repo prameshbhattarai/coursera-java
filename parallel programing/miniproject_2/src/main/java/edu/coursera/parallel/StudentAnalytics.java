@@ -103,16 +103,10 @@ public final class StudentAnalytics {
      */
     public String mostCommonFirstNameOfInactiveStudentsParallelStream(
             final Student[] studentArray) {
-        Map<String, Integer> nameCounts = new HashMap<String, Integer>();
-        Stream.of(studentArray)
+        return Stream.of(studentArray).parallel()
                 .filter(s -> !s.checkIsCurrent())
-                .forEach((s) -> {
-                    if (nameCounts.containsKey(s.getFirstName()))
-                        nameCounts.put(s.getFirstName(), nameCounts.get(s.getFirstName()) + 1);
-                    else
-                        nameCounts.put(s.getFirstName(), 1);
-                });
-        return nameCounts.entrySet().stream()
+                .collect(Collectors.groupingBy(s -> s.getFirstName(), Collectors.counting()))
+                .entrySet().stream()
                 .max(Map.Entry.comparingByValue()).get().getKey();
     }
 
@@ -149,6 +143,8 @@ public final class StudentAnalytics {
      */
     public int countNumberOfFailedStudentsOlderThan20ParallelStream(
             final Student[] studentArray) {
-        throw new UnsupportedOperationException();
+         return (int) Stream.of(studentArray).parallel()
+                .filter(s -> !s.checkIsCurrent() && s.getAge() > 20 && s.getGrade() < 65)
+                .count();
     }
 }

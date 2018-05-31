@@ -15,11 +15,9 @@
       <file leaf-file-name="StudentAnalytics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/coursera/parallel/StudentAnalytics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="103" column="70" lean-forward="true" selection-start-line="103" selection-start-column="70" selection-end-line="103" selection-end-column="70" />
-              <folding>
-                <element signature="e#3608#3625#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -27,11 +25,12 @@
       <file leaf-file-name="StudentAnalyticsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/coursera/parallel/StudentAnalyticsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state relative-caret-position="-1174">
+              <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
               <folding>
                 <element signature="e#2704#2705#0" expanded="true" />
                 <element signature="e#2757#2758#0" expanded="true" />
+                <element signature="method#mostCommonFirstNameOfInactiveStudentsHelper#0;class#StudentAnalyticsTest#0" expanded="false" />
                 <element signature="e#4434#4435#0" expanded="true" />
                 <element signature="e#4496#4497#0" expanded="true" />
               </folding>
@@ -235,7 +234,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="StudentAnalyticsTest.testAverageAgeOfEnrolledStudentsPerf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="edu.coursera.parallel.*" />
@@ -247,7 +246,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="edu.coursera.parallel" />
       <option name="MAIN_CLASS_NAME" value="edu.coursera.parallel.StudentAnalyticsTest" />
-      <option name="METHOD_NAME" value="testAverageAgeOfEnrolledStudentsPerf" />
+      <option name="METHOD_NAME" value="testCountNumberOfFailedStudentsOlderThan20" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.coursera.parallel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="miniproject_2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.coursera.parallel" />
+      <option name="MAIN_CLASS_NAME" value="edu.coursera.parallel.StudentAnalyticsTest" />
+      <option name="METHOD_NAME" value="testCountNumberOfFailedStudentsOlderThan20Perf" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -273,6 +297,31 @@
       <option name="PACKAGE_NAME" value="edu.coursera.parallel" />
       <option name="MAIN_CLASS_NAME" value="edu.coursera.parallel.StudentAnalyticsTest" />
       <option name="METHOD_NAME" value="testMostCommonFirstNameOfInactiveStudents" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.coursera.parallel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="miniproject_2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.coursera.parallel" />
+      <option name="MAIN_CLASS_NAME" value="edu.coursera.parallel.StudentAnalyticsTest" />
+      <option name="METHOD_NAME" value="testMostCommonFirstNameOfInactiveStudentsPerf" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -345,16 +394,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testAverageAgeOfEnrolledStudents" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testAverageAgeOfEnrolledStudentsPerf" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testAverageAgeOfEnrolledStudentsPerf" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testAverageAgeOfEnrolledStudents" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StudentAnalyticsTest.testAverageAgeOfEnrolledStudents" />
       </list>
     </recent_temporary>
   </component>
@@ -371,29 +424,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527746915765</updated>
-      <workItem from="1527746920949" duration="6235000" />
+      <workItem from="1527746920949" duration="13647000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentAnalyticsTest_testAverageAgeOfEnrolledStudents - 2018.05.31 at 12h 03m 02s.xml">
-      <configuration name="StudentAnalyticsTest.testAverageAgeOfEnrolledStudents" configurationId="JUnit" />
+    <history-entry file="StudentAnalyticsTest_testCountNumberOfFailedStudentsOlderThan20 - 2018.05.31 at 20h 51m 38s.xml">
+      <configuration name="StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentAnalyticsTest_testAverageAgeOfEnrolledStudentsPerf - 2018.05.31 at 15h 28m 01s.xml">
-      <configuration name="StudentAnalyticsTest.testAverageAgeOfEnrolledStudentsPerf" configurationId="JUnit" />
+    <history-entry file="StudentAnalyticsTest_testCountNumberOfFailedStudentsOlderThan20 - 2018.05.31 at 20h 54m 27s.xml">
+      <configuration name="StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudents - 2018.05.31 at 15h 28m 26s.xml">
+    <history-entry file="StudentAnalyticsTest_testCountNumberOfFailedStudentsOlderThan20 - 2018.05.31 at 20h 55m 08s.xml">
+      <configuration name="StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentAnalyticsTest_testCountNumberOfFailedStudentsOlderThan20Perf - 2018.05.31 at 20h 55m 19s.xml">
+      <configuration name="StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudents - 2018.05.31 at 20h 57m 34s.xml">
       <configuration name="StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudents - 2018.05.31 at 15h 28m 57s.xml">
+    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudents - 2018.05.31 at 21h 24m 40s.xml">
       <configuration name="StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudents - 2018.05.31 at 15h 29m 27s.xml">
+    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudents - 2018.05.31 at 21h 25m 51s.xml">
       <configuration name="StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudentsPerf - 2018.05.31 at 20h 56m 52s.xml">
+      <configuration name="StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudentsPerf - 2018.05.31 at 20h 57m 25s.xml">
+      <configuration name="StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentAnalyticsTest_testMostCommonFirstNameOfInactiveStudentsPerf - 2018.05.31 at 21h 24m 51s.xml">
+      <configuration name="StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6235000" />
+    <option name="totallyTimeSpent" value="13647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -409,7 +477,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4819079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -482,11 +550,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/coursera/parallel/StudentAnalyticsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state relative-caret-position="-1174">
+          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
           <folding>
             <element signature="e#2704#2705#0" expanded="true" />
             <element signature="e#2757#2758#0" expanded="true" />
+            <element signature="method#mostCommonFirstNameOfInactiveStudentsHelper#0;class#StudentAnalyticsTest#0" expanded="false" />
             <element signature="e#4434#4435#0" expanded="true" />
             <element signature="e#4496#4497#0" expanded="true" />
           </folding>
@@ -495,11 +564,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/coursera/parallel/StudentAnalytics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="103" column="70" lean-forward="true" selection-start-line="103" selection-start-column="70" selection-end-line="103" selection-end-column="70" />
-          <folding>
-            <element signature="e#3608#3625#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
