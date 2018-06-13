@@ -131,14 +131,11 @@ public final class OneDimAveragingPhaser {
                         threadPrivateMyNew[j] = (threadPrivateMyVal[j - 1]
                                 + threadPrivateMyVal[j + 1]) / 2.0;
                     }
-//                    System.out.println("Arriving task: "+ i);
                     phs[i].arrive();
                     if(i-1>=0){
-//                        System.out.println("Arrived task "+ i +" Waiting for "+ (i-1));
                         phs[i-1].awaitAdvance(1);
                     }
                     if(i+1<tasks){
-//                        System.out.println("Arrived task "+ i +" Waiting for "+ (i+1));
                         phs[i+1].awaitAdvance(1);
                     }
 
