@@ -45,4 +45,9 @@ public final class SieveSequential extends Sieve {
             primesList.add(candidate);
         }
     }
+
+    public static void main(String... args) {
+        SieveSequential seq = new SieveSequential();
+        System.out.println(seq.countPrimes(10));
+    }
 }
