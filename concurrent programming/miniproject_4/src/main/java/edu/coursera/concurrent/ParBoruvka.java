@@ -46,6 +46,7 @@ public final class ParBoruvka extends AbstractBoruvka<ParBoruvka.ParComponent> {
             // retrieve loopNode's edge with minimum cost
             final Edge<ParComponent> e = loopNode.getMinEdge();
             if (e == null) {
+                solution.setSolution(loopNode);
                 break; // done - we've contracted the graph to a single node
             }
 
@@ -80,7 +81,6 @@ public final class ParBoruvka extends AbstractBoruvka<ParBoruvka.ParComponent> {
         }
         // END OF EDGE CONTRACTION ALGORITHM
 
-        solution.setSolution(loopNode);
     }
 
     /**
